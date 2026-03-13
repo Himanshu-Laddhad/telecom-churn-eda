@@ -4,9 +4,9 @@ An end-to-end exploratory analysis of a telecom dataset with **3,333 customers**
 
 ## Highlights
 
-- **42.4% churn rate** among International Plan subscribers vs. only 11.5% without — the single strongest churn'signal
+- **42.4% churn rate** among International Plan subscribers vs. only 11.5% without — the single strongest churn signal
 - Identified that the three area codes in the dataset are randomly distributed across all 51 states, flagging the geographic features as unreliable for modelling
-- `CustServCalls` emerges as the strongest numeric predictor (r ≈ 0.21) — customers whn�Ї�(��(m��sh
+- `CustServCalls` emerges as the strongest numeric predictor (r ≈ 0.21) — customers who contact support ≥4 times churn at 3× the baseline rate
 - Detected upper-end outliers in `IntlCalls` via box plot visualisation
 
 ## Project Structure
@@ -34,7 +34,7 @@ telecom-churn-eda/
 
 | Finding | Detail |
 |---|---|
-| **Strongest numeric predictor** | `CUstServCalls` — high call frequency strongly associated with churn |
+| **Strongest numeric predictor** | `CustServCalls` — high call frequency strongly associated with churn |
 | **Strongest plan predictor** | International Plan → **42.4% churn** vs. 11.5% without (31 pp gap) |
 | **Protective factor** | Voicemail Plan subscribers churn less — 8.7% vs. 16.7% |
 | **Data quality issue** | Area codes (408, 415, 510) appear across all 51 states randomly — not geographically meaningful |
